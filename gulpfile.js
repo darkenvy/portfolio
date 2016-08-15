@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 
 gulp.task('build', function() {
   console.log('building!');
-  gulp.src(['js/main.js'])
+  gulp.src(['js/**/*.js'])
       .pipe(sourcemaps.init())
       .pipe(concat('concat.js'))
       .pipe(uglify())
