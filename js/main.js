@@ -1,5 +1,6 @@
 // Front end, to scroll to top:
 // window.scrollTo(0,0)
+console.log('v2.2');
 
 var app = angular.module('Portfolio', ['ui.router']);
 
@@ -11,7 +12,7 @@ app.factory('projects', function() {
           // infoColor: {backgroundColor: '#E3DFC8'},
           // infoColor: {backgroundColor: '#DAF4F5'},
           infoTitle: 'about me',
-          desc: ['/#/about']
+          desc: []
           },
 
     '2': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.png',
@@ -58,7 +59,19 @@ app.factory('projects', function() {
 })
 
 app.controller('MainCtrl', ['$scope', 'projects', function($scope, projects) {
+  // console.log($scope);
   $scope.projects = projects;
+  // this.classList.toggle('hover');
+  $scope.flip = function() {
+    console.log('yay!!');
+    // $location.path('/about')
+  }
+  // $location.url
+
+  // document.getElementsByClassName('flip-container')[0].addEventListener('click', function() {
+  //   this.classList.toggle('hover');
+  //   $state.go('about')
+  // })
 }])
 
 app.controller('ProjectsCtrl', ['$scope', 'projects', '$stateParams',
@@ -78,11 +91,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('main', {
-      url: '/',
-      templateUrl: 'views/main.html',
-      controller: 'MainCtrl'
-    })
+    // .state('main', {
+    //   url: '/',
+    //   templateUrl: 'views/main.html',
+    //   // controller: 'MainCtrl'
+    // })
     .state('projects', {
       url: '/projects/:id',
       templateUrl: 'views/projects.html',

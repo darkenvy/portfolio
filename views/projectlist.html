@@ -1,8 +1,8 @@
-<div class="max-width">
+<div class="max-width" ng-controller="MainCtrl">
   <div class="flex small-12 columns text-center">
     <div class="projects" ng-repeat="(key, project) in projects track by $index">
 
-      <div class="flip-container" onclick="this.classList.toggle('hover');">
+      <div class="flip-container" ng-click="flip()" ng-init="project._flipped=false">
         <div class="flipper">
 
           <!-- front content -->

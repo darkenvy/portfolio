@@ -15,16 +15,14 @@ body {
 
 .top-text {
   margin: 50px 0 100px 0; }
-
-.top-text h3 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  letter-spacing: 5pt; }
-
-.top-text h5 {
-  font-family: 'Raleway', sans-serif;
-  max-width: 500px;
-  margin: 0 auto; }
+  .top-text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5pt; }
+  .top-text h5 {
+    font-family: 'Raleway', sans-serif;
+    max-width: 500px;
+    margin: 0 auto; }
 
 /* --------------- */
 /*     Footer      */
@@ -65,7 +63,6 @@ body {
   margin: 5px;
   color: #4c4c4c; }
 
-/*@media (min-width: 990px) {*/
 .front img {
   width: 310px; }
 
@@ -73,17 +70,14 @@ body {
   width: 310px;
   height: 232px; }
 
-/*}*/
 .front-title {
   font-family: 'Raleway', sans-serif;
   height: 100%;
   vertical-align: center; }
+  .front-title h3 {
+    padding-top: 25%;
+    font-weight: 100; }
 
-.front-title h3 {
-  padding-top: 25%;
-  font-weight: 100; }
-
-/* ------- Effects --------- */
 .flipper .front {
   -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2)) !important;
   filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2)) !important; }
@@ -92,7 +86,6 @@ body {
   -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.1)) !important;
   filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.1)) !important; }
 
-/* Greyscale images - color when hovered on*/
 .front img {
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
@@ -100,11 +93,10 @@ body {
   -moz-filter: grayscale(0.5);
   -webkit-filter: grayscale(0.5);
   filter: grayscale(0.5); }
-
-.front img:hover {
-  -webkit-transition: .2s ease-in-out;
-  -moz-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
-  -moz-filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0); }
+  .front img:hover {
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    -moz-filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
