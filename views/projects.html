@@ -1,0 +1,9 @@
+<div class="top-text text-center">
+
+  <h1>{{project.title}}</h1>
+  <p>{{project.desc}}</p>
+  <div ng-repeat="image in project.img track by $index">
+    <img src="img/project/{{image}}" alt="">
+  </div>
+
+</div>

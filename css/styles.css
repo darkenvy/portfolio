@@ -1,0 +1,137 @@
+body {
+  background: url('../img/white_wall_hash.png');
+}
+
+.max-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --------------- */
+/*      Header     */
+/* --------------- */
+
+.header {
+  float: right;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+
+.top-text {
+  margin: 50px 0 100px 0;
+}
+
+.top-text h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5pt;
+}
+
+.top-text h5 {
+  font-family: 'Raleway', sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* --------------- */
+/*     Footer      */
+/* --------------- */
+
+
+.links li{
+  margin-right: 20px;
+  display: inline;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 14pt;
+  text-decoration: none;
+  color: #272727 !important;
+}
+
+/* --------------- */
+/*     Profile     */
+/* --------------- */
+
+.profile {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.img-circle {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+
+
+/* --------------- */
+/*     Projects    */
+/* --------------- */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*align-content: flex-start;*/
+  align-content: flex-start;
+  margin-bottom: 100px;
+}
+
+.projects {
+  margin: 5px;
+  color: #4c4c4c;
+}
+
+/*@media (min-width: 990px) {*/
+  .front img {
+    width: 310px;
+  }
+  .flip-container, .front, .back {
+    width: 310px;
+    height: 232px;
+  }
+
+/*}*/
+
+.front-title {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  vertical-align: center;
+}
+
+.front-title h3 {
+  padding-top: 25%;
+  font-weight: 100;
+}
+
+/* ------- Effects --------- */
+
+.flipper .front {
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2)) !important;
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2)) !important;
+}
+.flipper .back {
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.1)) !important;
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.1)) !important;
+}
+
+/* Greyscale images - color when hovered on*/
+.front img {
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-filter: grayscale(0.5);
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
+}
+.front img:hover {
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+
