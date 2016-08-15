@@ -2,7 +2,7 @@
   <div class="flex small-12 columns text-center">
     <div class="projects" ng-repeat="(key, project) in projects track by $index">
 
-      <div class="flip-container" ng-click="flip()" ng-init="project._flipped=false">
+      <div class="flip-container" ng-click="flip(project)" ng-class="{hover: project._flipped}" ng-init="project._flipped=false">
         <div class="flipper">
 
           <!-- front content -->
