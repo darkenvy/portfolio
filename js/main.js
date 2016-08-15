@@ -17,17 +17,17 @@ app.factory('projects', function() {
 
     '2': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.png',
           img: ['dungeon1.png','dungeon2.png'],
-          desc: ['Lorem Ipsum']
+          desc: ['A quick, roguelike game where the main objective is to stay alive and delve as deep into the depths as possible.']
          },
 
     '3': {title: 'SquidLink',           cover: 'project/cover-squidl.png',
           img: ['squidlink1.png', 'squidlink2.png', 'squidlink3.png', 'squidlink4.png',],
-          desc: ['Lorem Ipsum']
+          desc: ['A tool for helping to get files from A to B. All without the need for additional software or hardware. Squidlink utilizes Webtorrent as it\'s core but is geared towards ease of use.']
          },
 
     '4': {title: 'Game of Life',        cover: 'project/cover-life.png',
           img: ['gol1.png', 'gol2.png'],
-          desc: ['Lorem Ipsum']
+          desc: ['An exploration into efficiency and game logic. With simple 4 rules, complexity can arise.']
          },
 
     '5': {title: 'Homocides by Police', cover: 'project/cover-cops.png',
@@ -58,26 +58,24 @@ app.factory('projects', function() {
   }
 })
 
-app.controller('MainCtrl', ['$scope', 'projects', '$location', function($scope, projects, $location) {
-  // console.log($scope);
+app.controller('MainCtrl', ['$scope', 'projects', '$location', '$anchorScroll', function($scope, projects, $location, $anchorScroll) {
   $scope.projects = projects;
-  // this.classList.toggle('hover');
+
+  // $scope.$on('$routeChangeSuccess', function() {
+  //   console.log('changed');
+  // })
+  $scope.gotoTop = function() {
+    $anchorScroll();
+  }
   $scope.flip = function(project) {
-    // If clicked on About Me, then change view
-    // If not, then toggle flip
+    // If clicked on About Me, then change view. If not, then toggle flip
     if (project.title == 'About Me' || project.title == 'Resumé') {
-      $location.path('/about')
+      $location.path('/about');
+      $anchorScroll()
     } else {
       project._flipped = !project._flipped;
     }
-    // console.log('yay!!', $scope._flipped);
   }
-  // $location.url
-
-  // document.getElementsByClassName('flip-container')[0].addEventListener('click', function() {
-  //   this.classList.toggle('hover');
-  //   $state.go('about')
-  // })
 }])
 
 app.controller('ProjectsCtrl', ['$scope', 'projects', '$stateParams',

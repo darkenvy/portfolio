@@ -16,7 +16,7 @@
           <!-- back content -->
           <div class="back">
             <div class="subtitle">
-              <a ng-click href="#/projects/{{key}}" ng-hide="project.info">
+              <a ng-click="gotoTop()" href="#/projects/{{key}}" ng-hide="project.info">
                 {{project.title}}
               </a>
               <p ng-repeat="item in project.desc track by $index">
