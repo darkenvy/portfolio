@@ -39,23 +39,6 @@ body {
   }
 }
 
-
-
-/* --------------- */
-/*     Footer      */
-/* --------------- */
-
-
-.links li{
-  margin-right: 20px;
-  display: inline;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
-  font-size: 14pt;
-  text-decoration: none;
-  color: #272727 !important;
-}
-
 /* --------------- */
 /*     Profile     */
 /* --------------- */
@@ -71,8 +54,6 @@ body {
   margin-bottom: 50px;
 }
 
-
-
 /* --------------- */
 /*     Projects    */
 /* --------------- */
@@ -81,7 +62,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*align-content: flex-start;*/
   align-content: flex-start;
   margin-bottom: 100px;
 }
@@ -91,6 +71,7 @@ body {
   color: #4c4c4c;
 }
 
+// Front & Back Tiles
 .front img {
   width: 310px;
 }
@@ -106,6 +87,12 @@ body {
   h3 {
     padding-top: 25%;
     font-weight: 100;
+  }
+}
+
+.project-title {
+  h1 {
+    font-family: 'Raleway', sans-serif;
   }
 }
 
@@ -130,7 +117,9 @@ body {
 }
 
 
-// ------- Effects --------- //
+/* --------------- */
+/*     Effects     */
+/* --------------- */
 
 
 // Drop shadows for the projects
