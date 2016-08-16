@@ -22,6 +22,9 @@
               <p ng-repeat="item in project.desc track by $index">
                 {{item}}
               </p>
+              <p ng-repeat="link in project.links track by $index">
+                <a target="_blank" href="{{link[1]}}">{{link[0]}}</a>
+              </p>
             </div>
           </div>
 

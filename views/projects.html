@@ -1,9 +1,14 @@
 <div class="top-text text-center">
 
-  <h1>{{project.title}}</h1>
-  <p>{{project.desc}}</p>
-  <div ng-repeat="image in project.img track by $index">
-    <img src="img/project/{{image}}" alt="">
+  <div class="flex small-12 columns">
+    <div class="width100p"><h1>{{project.title}}</h1></div>
+
+    <div class="width100p" ng-if="project.github"><a target="_blank" href="{{project.github}}">Github</a></div>
+
+    <p class="short-width">{{project.desc[0]}}</p>
+    <div class="project-img-parent" ng-repeat="image in project.img track by $index">
+      <img class="project-img" src="img/project/{{image}}" alt="">
+    </div>
   </div>
 
 </div>

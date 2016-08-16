@@ -7,14 +7,22 @@ body {
   margin: 0 auto;
 }
 
+.short-width {
+  max-width: 600px;
+}
+
+.width100p {
+  width: 100%;
+}
+
 /* --------------- */
 /*      Header     */
 /* --------------- */
 
 .header {
-  float: right;
-  padding-right: 50px;
-  padding-top: 50px;
+  // float: left;
+  padding-left: 30px;
+  padding-top: 20px;
 }
 
 .top-text {
@@ -53,7 +61,7 @@ body {
 /* --------------- */
 
 .profile {
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 
@@ -107,6 +115,18 @@ body {
     font-size: 10pt;
     margin: 0 10px;
   }
+}
+
+// Inside the project page
+.project-img-parent {
+  width: inherit;
+}
+
+.project-img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
 }
 
 

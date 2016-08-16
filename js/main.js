@@ -9,50 +9,73 @@ app.factory('projects', function() {
     '1': {title: 'About Me',
           info: true,
           infoColor: {backgroundColor: '#E8ECF1'},
-          // infoColor: {backgroundColor: '#E3DFC8'},
-          // infoColor: {backgroundColor: '#DAF4F5'},
           infoTitle: 'about me',
           desc: []
           },
 
     '2': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.png',
+          github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
           img: ['dungeon1.png','dungeon2.png'],
-          desc: ['A quick, roguelike game where the main objective is to stay alive and delve as deep into the depths as possible.']
+          desc: ['A quick, roguelike game where the main objective is to stay alive and delve as deep into the depths as possible.'],
+          links: [['Play Now', 'http://renomckenzie.com/DungeonTreasure/']]
          },
 
-    '3': {title: 'SquidLink',           cover: 'project/cover-squidl.png',
-          img: ['squidlink1.png', 'squidlink2.png', 'squidlink3.png', 'squidlink4.png',],
-          desc: ['A tool for helping to get files from A to B. All without the need for additional software or hardware. Squidlink utilizes Webtorrent as it\'s core but is geared towards ease of use.']
+    '3': {title: 'Tactile VR Doom', cover: 'project/cover-vr-doom.png',
+          github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
+          img: ['vr-doom1.png','vr-doom2.png'],
+          desc: ['Tactile VR Doom is a tech demo that illustrates the possibilities of using physical objects to control the VR world by utilizing the camera'],
+          links: [
+            ['Live Demo','https://renomckenzie.com/vr-doom/'],
+            ['Setup Instructions', 'https://github.com/darkenvy/Tactile-VR-Doom-Demo']
+            ]
          },
 
     '4': {title: 'Game of Life',        cover: 'project/cover-life.png',
+          github: 'https://github.com/darkenvy/GameOfLife',
           img: ['gol1.png', 'gol2.png'],
-          desc: ['An exploration into efficiency and game logic. With simple 4 rules, complexity can arise.']
+          desc: ['An exploration into efficiency and game logic. With simple 4 rules, complexity can arise.'],
+          links: [['Play Now','http://renomckenzie.com/gol']]
          },
 
-    '5': {title: 'Homocides by Police', cover: 'project/cover-cops.png',
-          img: ['homocide1.png','homocide2.png'],
-          desc: ['Lorem Ipsum']
+    '5': {title: 'SquidLink',           cover: 'project/cover-squidl.png',
+          github: 'https://github.com/darkenvy/Squidl.ink',
+          img: ['squidlink1.png', 'squidlink2.png', 'squidlink3.png', 'squidlink4.png',],
+          desc: ['A tool for helping to get files from A to B. All without the need for additional software or hardware. Squidlink utilizes Webtorrent as it\'s core but is geared towards ease of use.'],
+          links: [['Live Site', 'http://squidl.ink/']]
          },
 
     '6': {title: 'Contact Me',
           info: true,
-          // infoColor: {backgroundColor: '#bcc5d6'},
-          // infoColor: {backgroundColor: '#E8ECF1'},
-          // infoColor: {backgroundColor: '#ABCECF'},
           infoColor: {backgroundColor: '#cdd7ea'},
           infoTitle: 'contact me',
-          desc: ['Reno McKenzie','Reno@RenoMcKenzie.com', 'https://www.linkedin.com/in/renomckenzie','darkenvy.github.com']
+          desc: ['Reno McKenzie'],
+          links: [
+            ['email', 'mailto:Reno@RenoMcKenzie.com'],
+            ['linkedin', 'https://www.linkedin.com/in/renomckenzie'],
+            ['github','http://darkenvy.github.com']
+            ]
           },
 
-    '7': {title: 'Resumé',
+    '7': {title: 'Yammerings on Twitter', cover: 'project/cover-yammerings.png',
+          github: 'https://github.com/darkenvy/Yammerings',
+          img: ['yammerings1.png','yammerings2.png'],
+          desc: ['By analyzing conversations on Twitter, we can provide client with realtime, up-to-date numbers trends, statistics and emotion bearing results.'],
+          links: [['Live Site','https://yammerings.herokuapp.com']]
+         },
+
+    '8': {title: 'Resumé',
           info: true,
-          // infoColor: {backgroundColor: '#B5CFD8'},
           infoColor: {backgroundColor: '#F5F1DA'},
-          // infoColor: {backgroundColor: '#C4DCE0'},
           infoTitle: 'resumé',
           desc: []
           },
+    '9': {title: 'Portfolio Site', cover: 'project/cover-portfolio.png',
+          github: 'https://github.com/darkenvy/darkenvy.github.io',
+          desc: ['This site is created using Angular, Angular Factories, CSS Animations, Google Fonts, and a splash of creativity.'],
+          links: [
+            ['github','https://github.com/darkenvy/darkenvy.github.io']
+            ]
+         },
 
 
   }
@@ -97,7 +120,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
   $stateProvider
     .state('main', {
       url: '/',
-      templateUrl: 'views/main.html',
+      templateUrl: 'views/aboutme.html',
     //   // controller: 'MainCtrl'
     })
     .state('projects', {
