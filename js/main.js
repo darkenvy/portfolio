@@ -13,16 +13,16 @@ app.factory('projects', function() {
           desc: []
           },
 
-    '2': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.png',
+    '2': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.jpg',
           github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
-          img: ['dungeon1.png','dungeon2.png'],
+          img: ['dungeon1.jpg','dungeon2.jpg'],
           desc: ['A quick, roguelike game where the main objective is to stay alive and delve as deep into the depths as possible.'],
           links: [['Play Now', 'http://renomckenzie.com/DungeonTreasure/']]
          },
 
-    '3': {title: 'Tactile VR Doom', cover: 'project/cover-vr-doom.png',
+    '3': {title: 'Tactile VR Doom', cover: 'project/cover-vr-doom.jpg',
           github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
-          img: ['vr-doom1.png','vr-doom2.png'],
+          img: ['vr-doom1.jpg','vr-doom2.jpg'],
           desc: ['Tactile VR Doom is a tech demo that illustrates the possibilities of using physical objects to control the VR world by utilizing the camera'],
           links: [
             ['Live Demo','https://renomckenzie.com/vr-doom/'],
@@ -30,16 +30,16 @@ app.factory('projects', function() {
             ]
          },
 
-    '4': {title: 'Game of Life',        cover: 'project/cover-life.png',
+    '4': {title: 'Game of Life',        cover: 'project/cover-life.jpg',
           github: 'https://github.com/darkenvy/GameOfLife',
           img: ['gol1.png', 'gol2.png'],
           desc: ['An exploration into efficiency and game logic. With simple 4 rules, complexity can arise.'],
           links: [['Play Now','http://renomckenzie.com/gol']]
          },
 
-    '5': {title: 'SquidLink',           cover: 'project/cover-squidl.png',
+    '5': {title: 'SquidLink',           cover: 'project/cover-squidl.jpg',
           github: 'https://github.com/darkenvy/Squidl.ink',
-          img: ['squidlink1.png', 'squidlink2.png', 'squidlink3.png', 'squidlink4.png',],
+          img: ['squidlink1.jpg', 'squidlink2.png', 'squidlink3.png', 'squidlink4.jpg',],
           desc: ['A tool for helping to get files from A to B. All without the need for additional software or hardware. Squidlink utilizes Webtorrent as it\'s core but is geared towards ease of use.'],
           links: [['Live Site', 'http://squidl.ink/']]
          },
@@ -56,9 +56,9 @@ app.factory('projects', function() {
             ]
           },
 
-    '7': {title: 'Yammerings on Twitter', cover: 'project/cover-yammerings.png',
+    '7': {title: 'Yammerings on Twitter', cover: 'project/cover-yammerings.jpg',
           github: 'https://github.com/darkenvy/Yammerings',
-          img: ['yammerings1.png','yammerings2.png'],
+          img: ['yammerings1.jpg','yammerings2.jpg'],
           desc: ['By analyzing conversations on Twitter, we can provide client with realtime, up-to-date numbers trends, statistics and emotion bearing results.'],
           links: [['Live Site','https://yammerings.herokuapp.com']]
          },
@@ -69,7 +69,7 @@ app.factory('projects', function() {
           infoTitle: 'resumé',
           desc: []
           },
-    '9': {title: 'Portfolio Site', cover: 'project/cover-portfolio.png',
+    '9': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
           github: 'https://github.com/darkenvy/darkenvy.github.io',
           desc: ['This site is created using Angular, Angular Factories, CSS Animations, Google Fonts, and a splash of creativity.'],
           links: [
