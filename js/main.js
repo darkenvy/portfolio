@@ -77,6 +77,62 @@ app.factory('projects', function() {
             ]
          },
 
+    '10': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
+          github: '',
+          img: ['vr-doom1.jpg','vr-doom2.jpg'],
+          desc: ['Minecraft is a phenomenon. It\'s no wonder that there are thousands of servers hosted at any given moment. Standing out is important.'],
+          links: [
+            ['Live Demo',''],
+            ['Setup Instructions', '']
+            ]
+         },
+    '11': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
+          github: 'https://github.com/darkenvy/TokeiTokei',
+          img: ['vr-doom1.jpg','vr-doom2.jpg'],
+          desc: ['Tokei Tokei is a Pebble Watchface for the service "WaniKani" which teaches Japanese to tens of thousands of users through SRS. Tokei Tokei immerses the user even further while telling the time.'],
+          links: [
+            ['Github','https://github.com/darkenvy/TokeiTokei']
+            ]
+         },
+
+    '12': {title: 'The Bitcoin Check', cover: 'project/cover-bitcoin.jpg',
+          github: '',
+          img: ['vr-doom1.jpg','vr-doom2.jpg'],
+          desc: ['The usability of paper Bitcoin would be more widespread if the currency is more pleasing to look at and gave a sense of security that Bitcoin already has.'],
+          links: [
+            ['Live Demo',''],
+            ['Setup Instructions', '']
+            ]
+         },
+
+    '13': {title: 'Studio24 Logo Design', cover: 'project/cover-studio.jpg',
+          github: '',
+          img: ['vr-doom1.jpg','vr-doom2.jpg'],
+          desc: ['Alchemy Studios LLC is a startup dance studio in Tacoma, WA. The core belief of the studio is that through the life of theater and the arts, anyone is able to transform themself. '],
+          links: [
+            ['Live Demo',''],
+            ['Setup Instructions', '']
+            ]
+         },
+    '14': {title: 'Bend Guru Logo Design', cover: 'project/cover-guru.png',
+          github: '',
+          img: ['vr-doom1.jpg','vr-doom2.jpg'],
+          desc: ['An upcoming company in the tourism industry needing a professional logo. By working carefully with the type and using simple shapes, this minimalist design is intended to be reserved in nature. All puns intended.'],
+          links: [
+            ['Live Demo',''],
+            ['Setup Instructions', '']
+            ]
+         },
+    '15': {title: 'The Beacon Logo Design', cover: 'project/cover-beacon.png',
+          github: '',
+          img: ['vr-doom1.jpg','vr-doom2.jpg'],
+          desc: ['With Hampton Inn reopening their waterside restaurant, a new identity is needed. The new direction gives patrons the desired feel & continually drives the proper demographic inside. '],
+          links: [
+            ['Live Demo',''],
+            ['Setup Instructions', '']
+            ]
+         },
+
 
   }
 })
