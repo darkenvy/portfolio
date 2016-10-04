@@ -1,6 +1,6 @@
 // Front end, to scroll to top:
 // window.scrollTo(0,0)
-console.log('v2.3');
+console.log('v2.4');
 
 var app = angular.module('Portfolio', ['ui.router']);
 
