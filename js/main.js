@@ -6,25 +6,19 @@ var app = angular.module('Portfolio', ['ui.router']);
 
 app.factory('projects', function() {
   return {
-    '1': {title: 'Contact Me',
-          info: true,
-          infoColor: {backgroundColor: '#cdd7ea'},
-          infoTitle: 'contact me',
-          desc: ['Reno McKenzie'],
-          links: [
-            ['email', 'mailto:Reno@RenoMcKenzie.com'],
-            ['linkedin', 'https://www.linkedin.com/in/renomckenzie'],
-            ['github','http://github.com/darkenvy']
-            ]
-          },
-
-    '2': {title: 'SquidLink',           cover: 'project/cover-squidl.jpg',
+    '1': {title: 'SquidLink',           cover: 'project/cover-squidl.jpg',
           github: 'https://github.com/darkenvy/Squidl.ink',
           img: ['squidlink1.jpg', 'squidlink2.png', 'squidlink3.png', 'squidlink4.jpg',],
           desc: ['A tool for helping to get files from A to B. All without the need for additional software or hardware. Squidlink utilizes Webtorrent as it\'s core but is geared towards ease of use.'],
           links: [['Live Site', 'http://squidl.ink/']]
          },
 
+    '2': {title: 'Yammerings on Twitter', cover: 'project/cover-yammerings.jpg',
+          github: 'https://github.com/darkenvy/Yammerings',
+          img: ['yammerings1.jpg','yammerings2.jpg'],
+          desc: ['By analyzing conversations on Twitter, we can provide client with realtime, up-to-date numbers trends, statistics and emotion bearing results.'],
+          links: [['Live Site','https://yammerings.herokuapp.com']]
+         },
 
     '3': {title: 'Tactile VR Doom', cover: 'project/cover-vr-doom.jpg',
           github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
@@ -36,12 +30,11 @@ app.factory('projects', function() {
             ]
          },
 
-
-    '4': {title: 'Yammerings on Twitter', cover: 'project/cover-yammerings.jpg',
-          github: 'https://github.com/darkenvy/Yammerings',
-          img: ['yammerings1.jpg','yammerings2.jpg'],
-          desc: ['By analyzing conversations on Twitter, we can provide client with realtime, up-to-date numbers trends, statistics and emotion bearing results.'],
-          links: [['Live Site','https://yammerings.herokuapp.com']]
+    '4': {title: 'Game of Life',        cover: 'project/cover-life.jpg',
+          github: 'https://github.com/darkenvy/GameOfLife',
+          img: ['gol1.png', 'gol2.png'],
+          desc: ['An exploration into efficiency and game logic. With simple 4 rules, complexity can arise.'],
+          links: [['Play Now','http://renomckenzie.com/gol']]
          },
 
     '5': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.jpg',
@@ -51,14 +44,7 @@ app.factory('projects', function() {
           links: [['Play Now', 'http://renomckenzie.com/DungeonTreasure/']]
          },
 
-    '6': {title: 'Game of Life',        cover: 'project/cover-life.jpg',
-          github: 'https://github.com/darkenvy/GameOfLife',
-          img: ['gol1.png', 'gol2.png'],
-          desc: ['An exploration into efficiency and game logic. With simple 4 rules, complexity can arise.'],
-          links: [['Play Now','http://renomckenzie.com/gol']]
-         },
-
-    '7': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
+    '6': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
           github: 'https://github.com/darkenvy/TokeiTokei',
           img: [''],
           desc: ['Tokei Tokei is a Pebble Watchface for the service "WaniKani" which teaches Japanese to tens of thousands of users through SRS. Tokei Tokei immerses the user even further while telling the time.'],
@@ -67,7 +53,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '8': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
+    '7': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
           github: 'https://github.com/darkenvy/darkenvy.github.io',
           desc: ['This site is created using Angular, Angular Factories, CSS Animations, Google Fonts, and a splash of creativity.'],
           links: [
@@ -75,7 +61,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '9': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
+    '8': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
           github: '',
           img: [''],
           desc: ['Minecraft is a phenomenon. It\'s no wonder that there are thousands of servers hosted at any given moment. Standing out is important.'],
@@ -86,7 +72,7 @@ app.factory('projects', function() {
          },
 
 
-    '12': {title: 'The Bitcoin Check', cover: 'project/cover-bitcoin.jpg',
+    '9': {title: 'The Bitcoin Check', cover: 'project/cover-bitcoin.jpg',
           github: '',
           img: ['bitcoin1.jpg','bitcoin2.jpg','bitcoin3.jpg'],
           desc: ['The usability of paper Bitcoin would be more widespread if the currency is more pleasing to look at and gave a sense of security that Bitcoin already has.'],
@@ -95,7 +81,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '13': {title: 'Studio24 Logo Design', cover: 'project/cover-studio.jpg',
+    '10': {title: 'Studio24 Logo Design', cover: 'project/cover-studio.jpg',
           github: '',
           img: ['studio24.jpg'],
           desc: ['Alchemy Studios LLC is a startup dance studio in Tacoma, WA. The core belief of the studio is that through the life of theater and the arts, anyone is able to transform themself. '],
@@ -103,7 +89,7 @@ app.factory('projects', function() {
             ['Behance','https://www.behance.net/gallery/25795795/Alchemy-Studios-LLC']
             ]
          },
-    '14': {title: 'Bend Guru Logo Design', cover: 'project/cover-guru.png',
+    '11': {title: 'Bend Guru Logo Design', cover: 'project/cover-guru.png',
           github: '',
           img: ['bendguru.png'],
           desc: ['An upcoming company in the tourism industry needing a professional logo. By working carefully with the type and using simple shapes, this minimalist design is intended to be reserved in nature. All puns intended.'],
@@ -111,7 +97,7 @@ app.factory('projects', function() {
             ['Behance','https://www.behance.net/gallery/25831393/Bend-Guru']
             ]
          },
-    '15': {title: 'The Beacon Logo Design', cover: 'project/cover-beacon.png',
+    '12': {title: 'The Beacon Logo Design', cover: 'project/cover-beacon.png',
           github: '',
           img: ['beacon1.jpg', 'beacon2.jpg'],
           desc: ['With HamptonInn opening a waterside restaurant, a new identity was needed. The new direction gives patrons a proper look & feel which invites new & old customers alike.'],
