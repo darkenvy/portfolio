@@ -6,45 +6,7 @@ var app = angular.module('Portfolio', ['ui.router']);
 
 app.factory('projects', function() {
   return {
-    '1': {title: 'About Me',
-          info: true,
-          infoColor: {backgroundColor: '#E8ECF1'},
-          infoTitle: 'about me',
-          desc: []
-          },
-
-    '2': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.jpg',
-          github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
-          img: ['dungeon1.jpg','dungeon2.jpg'],
-          desc: ['A quick, roguelike game where the main objective is to stay alive and delve as deep into the depths as possible.'],
-          links: [['Play Now', 'http://renomckenzie.com/DungeonTreasure/']]
-         },
-
-    '3': {title: 'Tactile VR Doom', cover: 'project/cover-vr-doom.jpg',
-          github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
-          img: ['vr-doom1.jpg','vr-doom2.jpg'],
-          desc: ['Tactile VR Doom is a tech demo that illustrates the possibilities of using physical objects to control the VR world by utilizing the camera'],
-          links: [
-            ['Live Demo','https://renomckenzie.com/vr-doom/'],
-            ['Setup Instructions', 'https://github.com/darkenvy/Tactile-VR-Doom-Demo']
-            ]
-         },
-
-    '4': {title: 'Game of Life',        cover: 'project/cover-life.jpg',
-          github: 'https://github.com/darkenvy/GameOfLife',
-          img: ['gol1.png', 'gol2.png'],
-          desc: ['An exploration into efficiency and game logic. With simple 4 rules, complexity can arise.'],
-          links: [['Play Now','http://renomckenzie.com/gol']]
-         },
-
-    '5': {title: 'SquidLink',           cover: 'project/cover-squidl.jpg',
-          github: 'https://github.com/darkenvy/Squidl.ink',
-          img: ['squidlink1.jpg', 'squidlink2.png', 'squidlink3.png', 'squidlink4.jpg',],
-          desc: ['A tool for helping to get files from A to B. All without the need for additional software or hardware. Squidlink utilizes Webtorrent as it\'s core but is geared towards ease of use.'],
-          links: [['Live Site', 'http://squidl.ink/']]
-         },
-
-    '6': {title: 'Contact Me',
+    '1': {title: 'Contact Me',
           info: true,
           infoColor: {backgroundColor: '#cdd7ea'},
           infoTitle: 'contact me',
@@ -52,25 +14,51 @@ app.factory('projects', function() {
           links: [
             ['email', 'mailto:Reno@RenoMcKenzie.com'],
             ['linkedin', 'https://www.linkedin.com/in/renomckenzie'],
-            ['github','http://darkenvy.github.com']
+            ['github','http://github.com/darkenvy']
             ]
           },
 
-    '7': {title: 'Yammerings on Twitter', cover: 'project/cover-yammerings.jpg',
+    '2': {title: 'SquidLink',           cover: 'project/cover-squidl.jpg',
+          github: 'https://github.com/darkenvy/Squidl.ink',
+          img: ['squidlink1.jpg', 'squidlink2.png', 'squidlink3.png', 'squidlink4.jpg',],
+          desc: ['A tool for helping to get files from A to B. All without the need for additional software or hardware. Squidlink utilizes Webtorrent as it\'s core but is geared towards ease of use.'],
+          links: [['Live Site', 'http://squidl.ink/']]
+         },
+
+
+    '3': {title: 'Tactile VR Doom', cover: 'project/cover-vr-doom.jpg',
+          github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
+          img: ['vr-doom1.jpg','vr-doom2.jpg'],
+          desc: ['Tactile VR Doom is a tech demo that illustrates the possibilities of using physical objects to control the VR world by utilizing the camera'],
+          links: [
+            ['Live Demo','http://renomckenzie.com/vr-doom/'],
+            ['Setup Instructions', 'https://github.com/darkenvy/Tactile-VR-Doom-Demo']
+            ]
+         },
+
+
+    '4': {title: 'Yammerings on Twitter', cover: 'project/cover-yammerings.jpg',
           github: 'https://github.com/darkenvy/Yammerings',
           img: ['yammerings1.jpg','yammerings2.jpg'],
           desc: ['By analyzing conversations on Twitter, we can provide client with realtime, up-to-date numbers trends, statistics and emotion bearing results.'],
           links: [['Live Site','https://yammerings.herokuapp.com']]
          },
 
-    '8': {title: 'Resumé',
-          info: true,
-          infoColor: {backgroundColor: '#F5F1DA'},
-          infoTitle: 'resumé',
-          desc: []
-          },
+    '5': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.jpg',
+          github: 'https://github.com/darkenvy/Tactile-VR-Doom-Demo',
+          img: ['dungeon1.jpg','dungeon2.jpg'],
+          desc: ['A quick, roguelike game where the main objective is to stay alive and delve as deep into the depths as possible.'],
+          links: [['Play Now', 'http://renomckenzie.com/DungeonTreasure/']]
+         },
 
-    '9': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
+    '6': {title: 'Game of Life',        cover: 'project/cover-life.jpg',
+          github: 'https://github.com/darkenvy/GameOfLife',
+          img: ['gol1.png', 'gol2.png'],
+          desc: ['An exploration into efficiency and game logic. With simple 4 rules, complexity can arise.'],
+          links: [['Play Now','http://renomckenzie.com/gol']]
+         },
+
+    '7': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
           github: 'https://github.com/darkenvy/TokeiTokei',
           img: [''],
           desc: ['Tokei Tokei is a Pebble Watchface for the service "WaniKani" which teaches Japanese to tens of thousands of users through SRS. Tokei Tokei immerses the user even further while telling the time.'],
@@ -79,7 +67,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '10': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
+    '8': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
           github: 'https://github.com/darkenvy/darkenvy.github.io',
           desc: ['This site is created using Angular, Angular Factories, CSS Animations, Google Fonts, and a splash of creativity.'],
           links: [
@@ -87,7 +75,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '11': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
+    '9': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
           github: '',
           img: [''],
           desc: ['Minecraft is a phenomenon. It\'s no wonder that there are thousands of servers hosted at any given moment. Standing out is important.'],
@@ -140,20 +128,11 @@ app.factory('projects', function() {
 app.controller('MainCtrl', ['$scope', 'projects', '$location', '$anchorScroll', function($scope, projects, $location, $anchorScroll) {
   $scope.projects = projects;
 
-  // $scope.$on('$routeChangeSuccess', function() {
-  //   console.log('changed');
-  // })
   $scope.gotoTop = function() {
     $anchorScroll();
   }
   $scope.flip = function(project) {
-    // If clicked on About Me, then change view. If not, then toggle flip
-    if (project.title == 'About Me' || project.title == 'Resumé') {
-      $location.path('/about');
-      $anchorScroll()
-    } else {
-      project._flipped = !project._flipped;
-    }
+    project._flipped = !project._flipped;
   }
 }])
 
