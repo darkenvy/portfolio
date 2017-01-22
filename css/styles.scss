@@ -40,6 +40,10 @@ body {
   }
 }
 
+.menu {
+  padding-top: 10px;
+}
+
 /* --------------- */
 /*     Profile     */
 /* --------------- */
@@ -47,6 +51,10 @@ body {
 .profile {
   margin-top: 70px;
   margin-bottom: 30px;
+}
+
+.img-circle-parent {
+  padding-top: 20px;
 }
 
 .img-circle {
@@ -155,3 +163,48 @@ body {
   }
 }
 
+
+
+/* --------------- */
+/*1 Column Override*/
+/* --------------- */
+
+@media (max-width: 1023px) {
+  .profile.columns {
+    width: 100%;
+    h5 {
+      margin-left: 0;
+    }
+    .img-circle-parent {
+      text-align: right;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .img-circle-parent {
+    display: none;
+  }
+  .top-text {
+    h5 {
+      max-width: none;
+    }
+    h3 {
+      letter-spacing: 3pt;
+    }
+  }
+  .profile {
+    text-align: center;
+  }
+  .menu {
+    padding-left: 20%;
+  }
+}
+
+// Slight offset fix
+@media (max-width: 475px) {
+  .menu {
+    padding-left: 10% !important;
+  }
+}

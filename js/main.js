@@ -44,40 +44,40 @@ app.factory('projects', function() {
           links: [['Play Now', 'http://renomckenzie.com/DungeonTreasure/']]
          },
 
-    '6': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
-          github: 'https://github.com/darkenvy/TokeiTokei',
-          img: [''],
-          desc: ['Tokei Tokei is a Pebble Watchface for the service "WaniKani" which teaches Japanese to tens of thousands of users through SRS. Tokei Tokei immerses the user even further while telling the time.'],
-          links: [
-            ['Github','https://github.com/darkenvy/TokeiTokei']
-            ]
-         },
-
-    '7': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
-          github: 'https://github.com/darkenvy/darkenvy.github.io',
-          desc: ['This site is created using Angular, Angular Factories, CSS Animations, Google Fonts, and a splash of creativity.'],
-          links: [
-            ['github','https://github.com/darkenvy/darkenvy.github.io']
-            ]
-         },
-
-    '8': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
+    '6': {title: 'HL Language Services', cover: 'project/cover-hllang.jpg',
           github: '',
-          img: [''],
-          desc: ['Minecraft is a phenomenon. It\'s no wonder that there are thousands of servers hosted at any given moment. Standing out is important.'],
+          img: ['hllang1.jpg', 'hllang2.jpg', 'hllang3.jpg',],
+          desc: ['Designed & developed a native Internet experience for a target demographic. Through agile development processes, the end result was delivered with minimal intermediary steps.'],
           links: [
-            ['Live Demo',''],
-            ['Setup Instructions', '']
+            ['Live Site','http://hllanguage.com/']
             ]
          },
 
+    '7': {title: 'The Beacon Logo Design', cover: 'project/cover-beacon.png',
+          github: '',
+          img: ['beacon1.jpg', 'beacon2.jpg'],
+          desc: ['With HamptonInn opening a waterside restaurant, a new identity was needed. The new direction gives patrons a proper look & feel which invites new & old customers alike.'],
+          links: [
+            ['Behance','http://www.behance.net/gallery/25795507/Hampton-Inns-Beacon'],
+            ['TripAdvisor', 'https://www.tripadvisor.com/LocationPhotoDirectLink-g60903-d93924-i140085849-Hampton_Inn_Frederick-Frederick_Maryland.html']
+            ]
+         },
 
-    '9': {title: 'The Bitcoin Check', cover: 'project/cover-bitcoin.jpg',
+    '8': {title: 'The Bitcoin Check', cover: 'project/cover-bitcoin.jpg',
           github: '',
           img: ['bitcoin1.jpg','bitcoin2.jpg','bitcoin3.jpg'],
           desc: ['The usability of paper Bitcoin would be more widespread if the currency is more pleasing to look at and gave a sense of security that Bitcoin already has.'],
           links: [
             ['Behance','https://www.behance.net/gallery/26028099/The-Bitcoin-Check']
+            ]
+         },
+
+    '9': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
+          github: 'https://github.com/darkenvy/TokeiTokei',
+          img: ['tokeitokei1.jpg'],
+          desc: ['Tokei Tokei is a Pebble Watchface for the service "WaniKani" which teaches Japanese to tens of thousands of users through SRS. Tokei Tokei immerses the user even further while telling the time.'],
+          links: [
+            ['Github','https://github.com/darkenvy/TokeiTokei']
             ]
          },
 
@@ -89,21 +89,26 @@ app.factory('projects', function() {
             ['Behance','https://www.behance.net/gallery/25795795/Alchemy-Studios-LLC']
             ]
          },
-    '11': {title: 'Bend Guru Logo Design', cover: 'project/cover-guru.png',
+    '11': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
           github: '',
-          img: ['bendguru.png'],
-          desc: ['An upcoming company in the tourism industry needing a professional logo. By working carefully with the type and using simple shapes, this minimalist design is intended to be reserved in nature. All puns intended.'],
+          img: ['minecraft1.jpg'],
+          desc: ['Minecraft is a phenomenon. It\'s no wonder that there are thousands of servers hosted at any given moment. Standing out is important.'],
           links: [
-            ['Behance','https://www.behance.net/gallery/25831393/Bend-Guru']
             ]
          },
-    '12': {title: 'The Beacon Logo Design', cover: 'project/cover-beacon.png',
-          github: '',
-          img: ['beacon1.jpg', 'beacon2.jpg'],
-          desc: ['With HamptonInn opening a waterside restaurant, a new identity was needed. The new direction gives patrons a proper look & feel which invites new & old customers alike.'],
+    // '13': {title: 'Bend Guru Logo Design', cover: 'project/cover-guru.png',
+    //       github: '',
+    //       img: ['bendguru.png'],
+    //       desc: ['An upcoming company in the tourism industry needing a professional logo. By working carefully with the type and using simple shapes, this minimalist design is intended to be reserved in nature. All puns intended.'],
+    //       links: [
+    //         ['Behance','https://www.behance.net/gallery/25831393/Bend-Guru']
+    //         ]
+    //      },
+    '12': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
+          github: 'https://github.com/darkenvy/darkenvy.github.io',
+          desc: ['This site is created using Angular, Angular Factories, CSS Animations, Google Fonts, and a splash of creativity.'],
           links: [
-            ['Behance','https://www.behance.net/gallery/25795507/Hampton-Inns-Beacon'],
-            ['TripAdvisor', 'https://www.tripadvisor.com/LocationPhotoDirectLink-g60903-d93924-i140085849-Hampton_Inn_Frederick-Frederick_Maryland.html']
+            ['github','https://github.com/darkenvy/darkenvy.github.io']
             ]
          },
 
