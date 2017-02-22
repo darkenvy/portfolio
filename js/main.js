@@ -44,7 +44,17 @@ app.factory('projects', function() {
           links: [['Play Now', 'http://renomckenzie.com/DungeonTreasure/']]
          },
 
-    '6': {title: 'HL Language Services', cover: 'project/cover-hllang.jpg',
+    '6': {title: 'Alexa Skills', cover: 'project/cover-echo.jpg',
+          github: '',
+          img: ['echo1.jpg', 'echo2.jpg'],
+          desc: ['Lorem Ipsum'],
+          links: [
+            ['Amazon: CalPal', 'https://www.amazon.com/Reno-McKenzie-CalPal/dp/B01M8JPI0M'],
+            ['Amazon: CoinWatch', 'https://www.amazon.com/Reno-McKenzie-CoinWatch/dp/B01N3RAD6F']
+          ]
+         },
+
+    '7': {title: 'HL Language Services', cover: 'project/cover-hllang.jpg',
           github: '',
           img: ['hllang1.jpg', 'hllang2.jpg', 'hllang3.jpg',],
           desc: ['Designed & developed a native Internet experience for a target demographic. Through agile development processes, the end result was delivered with minimal intermediary steps.'],
@@ -53,7 +63,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '7': {title: 'The Beacon Logo Design', cover: 'project/cover-beacon.png',
+    '8': {title: 'The Beacon Logo Design', cover: 'project/cover-beacon.png',
           github: '',
           img: ['beacon1.jpg', 'beacon2.jpg'],
           desc: ['With HamptonInn opening a waterside restaurant, a new identity was needed. The new direction gives patrons a proper look & feel which invites new & old customers alike.'],
@@ -63,7 +73,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '8': {title: 'The Bitcoin Check', cover: 'project/cover-bitcoin.jpg',
+    '9': {title: 'The Bitcoin Check', cover: 'project/cover-bitcoin.jpg',
           github: '',
           img: ['bitcoin1.jpg','bitcoin2.jpg','bitcoin3.jpg'],
           desc: ['The usability of paper Bitcoin would be more widespread if the currency is more pleasing to look at and gave a sense of security that Bitcoin already has.'],
@@ -72,7 +82,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '9': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
+    '10': {title: 'TokeiTokei WatchFace', cover: 'project/cover-tokei.jpg',
           github: 'https://github.com/darkenvy/TokeiTokei',
           img: ['tokeitokei1.jpg'],
           desc: ['Tokei Tokei is a Pebble Watchface for the service "WaniKani" which teaches Japanese to tens of thousands of users through SRS. Tokei Tokei immerses the user even further while telling the time.'],
@@ -81,7 +91,7 @@ app.factory('projects', function() {
             ]
          },
 
-    '10': {title: 'Studio24 Logo Design', cover: 'project/cover-studio.jpg',
+    '11': {title: 'Studio24 Logo Design', cover: 'project/cover-studio.jpg',
           github: '',
           img: ['studio24.jpg'],
           desc: ['Alchemy Studios LLC is a startup dance studio in Tacoma, WA. The core belief of the studio is that through the life of theater and the arts, anyone is able to transform themself. '],
@@ -89,7 +99,7 @@ app.factory('projects', function() {
             ['Behance','https://www.behance.net/gallery/25795795/Alchemy-Studios-LLC']
             ]
          },
-    '11': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
+    '12': {title: 'Minecraft Fansite', cover: 'project/cover-voidkingdom.jpg',
           github: '',
           img: ['minecraft1.jpg'],
           desc: ['Minecraft is a phenomenon. It\'s no wonder that there are thousands of servers hosted at any given moment. Standing out is important.'],
@@ -104,7 +114,7 @@ app.factory('projects', function() {
     //         ['Behance','https://www.behance.net/gallery/25831393/Bend-Guru']
     //         ]
     //      },
-    '12': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
+    '13': {title: 'Portfolio Site', cover: 'project/cover-portfolio.jpg',
           github: 'https://github.com/darkenvy/darkenvy.github.io',
           desc: ['This site is created using Angular, Angular Factories, CSS Animations, Google Fonts, and a splash of creativity.'],
           links: [
